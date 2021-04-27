@@ -132,7 +132,7 @@ for label in labels.keys():
 
     boxes = np.array([p[0] for p in labels[label]])
     proba = np.array([p[1] for p in labels[label]])
-    boxes = non_max_suppression(boxes, proba)
+    boxes = non_max_suppression(boxes, proba)   # xem thêm package imutils
 
     """ Nên nhớ vẫn đang làm cho từng loại label """
     # Duyệt qua tất cả bounding boxes giữ lại sau non-max suppression
